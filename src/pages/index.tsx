@@ -5,10 +5,15 @@ import styles from '@/styles/Home.module.css'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Divider from '@/components/Divider'
+import WhoWeAre from '@/components/WhoWeAre'
+import OurCalling from '@/components/OurCalling'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const divOneText = '“The spirit of Christ is the spirit of missions. The nearer we get to Him, the more intensely missionary we become.” ― Henry Martyn'
+
+  const divTwoText = '“He said to them, “Go into all the world and preach the gospel to all creation.” ― Mark 16:15'
   return (
     <>
       <Head>
@@ -20,7 +25,10 @@ export default function Home() {
       <Header/>
       <main className={styles.main}>
         <Hero />
-        <Divider/>
+        <Divider userText={ divOneText } dividerColor={'divider blue'} />
+        <WhoWeAre />
+        <OurCalling />
+        <Divider userText={ divTwoText } dividerColor={'divider gray'} />
       </main>
     </>
   )
