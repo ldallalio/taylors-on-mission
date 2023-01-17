@@ -1,10 +1,24 @@
 import React from 'react'
+import { NextPage } from 'next'
+import { Raleway } from '@next/font/google'
 
-type Props = {}
+interface Props {
+  userText?: string,
+  dividerColor?:string,
+}
+const raleway = Raleway({
+    subsets: ['latin'],
+    weight:'100',
+    variable: '--font-raleway',
+  display: 'optional'})
 
-const Divider = (props: Props) => {
+const Divider: NextPage<Props> = ({userText, dividerColor}) => {
   return (
-    <div className='divider blue'></div>
+    <div className={dividerColor}>
+      <div className={raleway.className}>
+      <p>{ userText }</p>
+      </div>
+    </div>
   )
 }
 
