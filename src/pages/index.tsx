@@ -33,7 +33,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link rel="icon" href="/favicon.ico" />
-        <script src="https://kit.fontawesome.com/dc3f568e91.js" crossorigin="anonymous" async></script>
+        <script src="https://kit.fontawesome.com/dc3f568e91.js" crossOrigin="anonymous" async></script>
       </Head>
       <Header />
       <main className={ styles.main }>
