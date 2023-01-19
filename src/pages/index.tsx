@@ -11,6 +11,7 @@ import Vision from '@/components/Vision'
 import PictureDivider from '@/components/PictureDivider'
 import ChurchPlanting from '@/components/ChurchPlanting'
 import Partner from '@/components/Partner'
+import ContactUs from '@/components/ContactUs'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,21 +31,24 @@ export default function Home() {
         <title>Taylor&apos;s On Mission</title>
         <meta name="description" content="Taylor&apos;s On Mission<" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link rel="icon" href="/favicon.ico" />
+        <script src="https://kit.fontawesome.com/dc3f568e91.js" crossOrigin="anonymous" async></script>
       </Head>
-      <Header/>
-      <main className={styles.main}>
+      <Header />
+      <main className={ styles.main }>
         <Hero />
-        <Divider userText={ divOneText } dividerColor={'divider blue'} />
+        <Divider userText={ divOneText } dividerColor={ 'divider blue' } />
         <WhoWeAre />
         <OurCalling />
-        <Divider userText={ divTwoText } dividerColor={'divider gray'} />
+        <Divider userText={ divTwoText } dividerColor={ 'divider gray' } />
         <Vision />
         <PictureDivider />
         <Divider userText={ divThreeText } dividerColor={ 'divider pink' } />
-        <ChurchPlanting/>
+        <ChurchPlanting />
         <Divider userText={ divFourText } dividerColor={ 'divider blue' } />
-        <Partner/>
+        <Partner />
+        <ContactUs />
       </main>
     </>
   )

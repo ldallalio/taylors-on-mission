@@ -6,13 +6,13 @@ import downArrow from '../assets/images/arrow-alt-circle-down.svg'
 type Props = {}
 function Hero({ }: Props) {
   return (
-      <div id='hero'>
-          <Image src={ taylorImage } alt='taylors mission hero image' id='heroImage' />
-          <a href="#">
-              
-          <Image  src={downArrow} alt='read more' id='downArrow'  />
+    <div id='hero'>
+      <Image src={ taylorImage } alt='taylors mission hero image' id='heroImage' />
+      <a href="#whoWeAre">
 
-          </a>
+        <Image src={ downArrow } alt='read more' id='downArrow' />
+
+      </a>
     </div>
   )
 }
