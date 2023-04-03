@@ -26,9 +26,9 @@ const Header = (props: Props) => {
           <a href="#partnerWithUs">
             <div className="nav-item">Contact</div>
           </a>
-          {/* <a href="#donate">
+          <a href="https://missionaries.namb.net/full/nathan-taylor">
             <div className="nav-item">Donate</div>
-          </a> */}
+          </a>
         </nav>
       </div>
     </header>

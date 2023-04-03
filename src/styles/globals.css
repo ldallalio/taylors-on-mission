@@ -383,3 +383,25 @@ button {
   background-color: #00A7DA;
   color: white;
 }
+
+.donateButton{
+  padding:18px;
+  border-radius: 100px;
+  width: 120px;
+  background-color: #ED6565;
+  text-align: center;
+  text-decoration: none;
+  color:white;
+  margin-bottom: 20px;
+}
+
+.donateLink{
+  text-decoration: none;
+  color:white;
+}
+
+.donateButton:hover {
+  border: none;
+  background-color: #00A7DA;
+  color: white;
+}
